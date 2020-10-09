@@ -5,24 +5,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- adding bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!-- adding fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <!-- adding custom css -->
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./vendor/fontawesome/all.min.css">
+    <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
 
-    <!-- adding jquery -->
-    <script src="./js/jquery.min.js"></script>
-    <!-- adding bootstrap -->
-    <script src="./js/bootstrap.min.js"></script>
+    <!-- * ========================================================== -->
+    <!-- * ALWAYS ON TOP -->
+    <!-- * ========================================================== -->
+    <div class="backtotop flex-center">
+        <button id="backtotop">
+            <img src="./assets/img/back-to-top.gif" class="img-fluid" alt="">
+        </button>
+    </div>
+    <!-- * ========================================================== -->
+    <!-- * ALWAYS ON TOP -->
+    <!-- * ========================================================== -->
+
+    <header>
+
+        <!-- * ========================================================== -->
+        <!-- * HERO -->
+        <!-- * ========================================================== -->
+        <section class="hero flex-center ignoreMe">
+            <div class="ignoreMe flex-center flex-column text-center content-wrapper">
+
+                <img src="./assets/img/planet1.png" class="planet1 planet planet img-fluid" alt="">
+                <img src="./assets/img/planet2.png" class="planet2 planet img-fluid" alt="">
+                <img src="./assets/img/planet3.png" class="planet3 planet img-fluid" alt="">
+                <img src="./assets/img/planet4.png" class="planet4 planet img-fluid" alt="">
+                <img src="./assets/img/planet5.png" class="planet5 planet img-fluid" alt="">
+                <img src="./assets/img/planet6.png" class="planet6 planet img-fluid" alt="">
+                <img src="./assets/img/planet7.png" class="planet7 planet img-fluid" alt="">
+                <img src="./assets/img/planet8.png" class="planet8 planet img-fluid" alt="">
+                <img src="./assets/img/planet9.png" class="planet9 planet img-fluid" alt="">
+                <img src="./assets/img/planet10.png" class="planet10 planet img-fluid" alt="">
+                <img src="./assets/img/planet11.png" class="planet11 planet img-fluid" alt="">
+
+
+                <h4>Welcome to the space exploration</h4>
+                <h3>I am</h3>
+                <h1>Shubham Gujarathi</h1>
+                <p>A Software Engineer</p>
+                <div class="gravity-btn ignoreMe mt-4">
+                    <button class="btn pump jGravity" id="jGravity">Activate Gravity</button>
+                </div>
+            </div>
+        </section>
+        <!-- * ========================================================== -->
+        <!-- * HERO -->
+        <!-- * ========================================================== -->
+
+    </header>
+    <main>
+
+        <!-- * ========================================================== -->
+        <!-- * ABOUT ME -->
+        <!-- * ========================================================== -->
+        <section class="about-me">
+            <div class="container">
+                <img src="./assets/img/about-img.png" alt="" class="about-img img-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="content">
+                            <div class="heading">
+                                <h1>About me</h1>
+                                <div class="line"></div>
+                            </div>
+                            <p class="para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate iure repellendus
+                                soluta, itaque vero libero ducimus suscipit aperiam voluptatibus nihil.
+                            </p>
+                            <p class="para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi possimus quas velit,
+                                corporis, consequatur sequi omnis delectus hic cupiditate expedita illo minima? Eos
+                                voluptatibus culpa quidem voluptates nobis ipsa maiores.
+                            </p>
+
+                            <h4 class="sub-heading">Education</h4>
+
+                            <div class="education">
+                                <div class="edu">
+                                    <div class="degree">B.E.</div>
+                                    <div class="year">2018 - 2021</div>
+                                    <div class="stream">Computer Engineering</div>
+                                    <hr>
+                                    <div class="institute">Sinhgad College of Enginnering, Vadgaon bk, Pune - 41</div>
+                                </div>
+                                <div class="edu">
+                                    <div class="degree">Diploma</div>
+                                    <div class="year">2015 - 2018</div>
+                                    <div class="stream">Computer Engineering</div>
+                                    <hr>
+                                    <div class="institute">Government Polytechnic Khamgaon</div>
+                                </div>
+                                <div class="edu">
+                                    <div class="degree">SSC</div>
+                                    <div class="year">2014 - 2015</div>
+                                    <div class="stream">State Board</div>
+                                    <hr>
+                                    <div class="institute">Shri A. K. National Highschool, Khamgaon</div>
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <a href="#" class="primary-button mr-2 btn">Download CV</a>
+                                <a href="#" class="secondary-button btn">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- * ========================================================== -->
+        <!-- * ABOUT ME -->
+        <!-- * ========================================================== -->
+
+
+        <!-- * ========================================================== -->
+        <!-- * SKILLS -->
+        <!-- * ========================================================== -->
+        <section class="skills pt-5">
+            <div class="container">
+                <div class="heading text-center mb-5">
+                    <h1>Skills I Have</h1>
+                </div>
+
+                <div class="card-wrapper">
+                    <div class="card" data-tilt>
+                        <div class="image">
+                            <img src="./assets/img/planets-sep3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-heading">
+                                Front-end Development <br> __
+                            </div>
+                            <div class="w-80 skill">
+                                <span>HTML</span>
+                            </div>
+                            <div class="w-90 skill">
+                                <span>CSS</span>
+                            </div>
+                            <div class="w-70 skill">
+                                <span>JS & Jquery</span>
+                            </div>
+                            <div class="w-70 skill">
+                                <span>AJAX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="image">
+                            <img src="./assets/img/planets-sep4.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-heading">
+                                Back-end Development <br> __
+                            </div>
+                            <div class="w-80 skill">
+                                <span>PHP</span>
+                            </div>
+                            <div class="w-70 skill">
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="image">
+                            <img src="./assets/img/planets-sep5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-heading">
+                                Tools / SW / IDEs <br> __
+                            </div>
+                            <div class="w-90 skill">
+                                <span>VS Code</span>
+                            </div>
+                            <div class="w-40 skill">
+                                <span>Adobe Photoshop</span>
+                            </div>
+                            <div class="w-30 skill">
+                                <span>Adobe XD & Illustrator</span>
+                            </div>
+                            <div class="w-80 skill">
+                                <span>Sony Vegas - Audacity - OBS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="image">
+                            <img src="./assets/img/planets-sep1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-heading">
+                                Other Skills <br> __
+                            </div>
+                            <div class="w-60 skill">
+                                <span>SEO</span>
+                            </div>
+                            <div class="w-40 skill">
+                                <span>Digital Marketing</span>
+                            </div>
+                            <div class="w-100 skill">
+                                <span>Chess & Fun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- * ========================================================== -->
+        <!-- * SKILLS -->
+        <!-- * ========================================================== -->
+
+    </main>
+    <footer>
+
+        <!-- * ========================================================== -->
+        <!-- * FOOTER -->
+        <!-- * ========================================================== -->
+        <div class="container">
+            <div class="spaceman">
+                <img src="./assets/backgrounds/footer-img.png" class="img-fluid" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12">
+                    <div class="row content">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="footer-heading">
+                                <h3>Hello Viewers</h3>
+                                <p class="footer-para mt-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium itaque consequatur, ut magni sapiente exercitationem repellat dolorem commodi officia veniam aperiam, quas quibusdam nihil magnam sequi, ullam illum. Exercitationem, aperiam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-12"></div>
+                        <div class="col-lg-5 col-md-5 col-12">
+                            <!-- links -->
+                            <div class="footer-heading">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="links mt-2">
+                                <a href="#"><i class="fas fa-chevron-right mr-2"></i> Download Resume</a>
+                            </div>
+                            <!-- social media -->
+                            <div class="footer-heading mt-4">
+                                <h3>Social Media</h3>
+                            </div>
+                            <div class="link-icons">
+                                <a href="#" class="secondary-button flex-center">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="secondary-button flex-center">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="secondary-button flex-center">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="secondary-button flex-center">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-5">
+                    <div class="copy">
+                        <p>&copy; 2020 | sbgprojects <i class="fas fa-handshake mx-2"></i> <a href="#">Website Vikreta</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * ========================================================== -->
+        <!-- * FOOTER -->
+        <!-- * ========================================================== -->
+
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- gravity js -->
+    <script src="./vendor/gravityjs/jGravity.js"></script>
+    <!-- tilt js -->
+    <script src="./vendor/tiltjs/tilt.jquery.js"></script>
     <!-- custom js -->
     <script src="./js/main.js"></script>
 </body>
