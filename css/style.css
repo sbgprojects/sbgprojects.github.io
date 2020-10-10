@@ -546,12 +546,13 @@
 .portfolio .other-items{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     margin-top: 3rem;
 }
 .portfolio .other-items .card{
     margin: 1rem;
     /* border: 1px solid var(--gray-color); */
+    flex: 1;
     border: none;
     border-radius: 0;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
