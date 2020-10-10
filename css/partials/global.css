@@ -1,0 +1,193 @@
+/* ========================================================== */
+/* ELEMENTS */
+/* ========================================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: var(--open-sans);
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+}
+section{
+    padding: 100px 0;
+}
+
+
+/* ========================================================== */
+/* CLASSES */
+/* ========================================================== */
+.btn, .btn:hover, .btn:focus,
+.form-control, .form-control:hover, .form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.container{
+    max-width: 1200px !important;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* this will make image on page non downloadable */
+.image{
+    position: relative;
+}
+.image:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================================== */
+/* BACK TO TOP */
+/* ========================================================== */
+.backtotop{
+    position: fixed;
+    right: 2rem;
+    bottom: 3rem;
+    border-radius: 5px;
+    width: 50px;
+    height:50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.backtotop.show{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000;
+}
+.backtotop.launch{
+    visibility: hidden;
+    opacity: 0;
+    bottom: 110% !important;
+}
+.backtotop button{
+    border: none;
+    background: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+@media only screen and (max-width: 993px) {
+    .backtotop{
+        right: 1rem;
+        bottom: 1rem;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+
+/* ========================================================== */
+/* FOOTER */
+/* ========================================================== */
+footer{
+    background: url("../../assets/backgrounds/footer-back1.png") bottom no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding-top: 200px;
+}
+footer .spaceman{
+    position: absolute;
+    width: 20%;
+    bottom: 20%;
+    right: 10%;
+    animation: spaceman 5s linear infinite;
+}
+@keyframes spaceman{
+    0%{
+        bottom: 20%;
+        right: 10%;
+        transform: rotate(0);
+    }
+    25%{
+        bottom: 25%;
+        right: 10%;
+        transform: rotate(0);
+    }
+    40%{
+        right: 11%;
+        transform: rotate(-10deg);
+    }
+    60%{
+        right: 10%;
+        bottom: 30%;
+    }
+    80%{
+        right: 10.5%;
+        bottom: 25%;
+        transform: rotate(8deg);
+    }
+    100%{
+        bottom: 20%;
+        right: 10%;
+        transform: rotate(0);
+    }
+}
+footer .content{
+    min-height: 20vh;
+}
+footer .footer-heading h3{
+    color: var(--pink-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-shadow: 1.5px 1.5px var(--purple-color);
+}
+footer .footer-para{
+    color: var(--whitesmoke-color);
+    font-size: 0.8rem;
+}
+footer .link-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .link-icons a{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    font-size: 0.9rem;
+    padding: 0;
+    box-shadow: var(--box-shadow);
+}
+footer .links a{
+    color: var(--white-color);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+footer hr{
+    background: var(--pink-color);
+    width: 100%;
+}
+footer .copy{
+    color: white;
+}
+footer .copy i{
+    color:goldenrod;
+}
+footer .copy a{
+    color: var(--pink-color);
+    font-weight: bold;
+    text-shadow: 2px 2px var(--black-color);
+}
